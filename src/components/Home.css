@@ -1,0 +1,109 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    contain: layout;
+    box-sizing: border-box;
+    scrollbar-width: none;
+  }
+  .mainSection{
+    background-image: url('../images/h1_hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+
+  }
+  .mainSectionContent{
+    background-color: rgba(0, 0, 0, 0.24);
+
+    height: 100vh;
+  }
+  .header{
+    padding:  2rem;
+    position: -webkit-sticky;
+    width: 100%;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+  }
+  
+  .nav-icon{
+    display: none;
+  }
+  
+  .miniSreen {
+    transform: translateY(-122%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .handleNav.open{
+    color: red;
+  }
+  .miniSreen.open {
+    transform: translateY(0);
+  }
+  
+  .arror_icon .text_nav:hover{
+    color: white;
+  }
+  .text_nav .arror_icon:hover{
+    color: white;
+  }
+  
+  .scrolling-text {
+    white-space: nowrap;
+    display: flex;
+    animation: marquee 23s linear infinite;
+    transition: 2s ease-in-out;
+    overflow: hidden;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  
+  /* Section 2*/
+  @media screen and (width >= 300px){
+    .nav-icon{
+      display: block;
+    }
+    .nav{
+      display: none;
+    }
+    .logoImg{
+      margin-top: 10px;
+      width: 80px;
+    }
+    .home_text{
+      font-size: 4.5rem;
+    }
+  }
+  
+  @media screen and (width > 300px) and (width > 600px){
+    .nav-icon{
+      display: block;
+    }
+    .nav{
+      display: none;
+    }
+    .logoImg{
+      margin-top: 10px;
+      width: 80px;
+    }
+  }
+  @media screen and (width >= 700px) and (width >= 1000px){
+    .nav-icon{
+      display: none;
+    }
+    .nav{
+      display: block;
+    }
+  }
